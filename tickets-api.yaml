@@ -1,0 +1,308 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_scratchpad
+  created: 1778489615866
+  modified: 1778489615866
+  description: ""
+collection:
+  - name: Tickets-api
+    meta:
+      id: fld_4e80d25e8ca8457ab3fa41634893692a
+      created: 1778489881709
+      modified: 1778492345357
+      sortKey: -1778489881709
+      description: ""
+    children:
+      - url: "{{url}}/api/register"
+        name: Register
+        meta:
+          id: req_29fcc008ab804b2b92944b4a3135811d
+          created: 1778489888426
+          modified: 1778492077462
+          isPrivate: false
+          description: ""
+          sortKey: -1778489888426
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "name": "Павел Неволя",
+                "email": "pash@example.com",
+                "password": "password222",
+                "password_confirmation": "password222"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets"
+        name: Tickets
+        meta:
+          id: req_7b25d90748b64688b061209c2635dba5
+          created: 1778490564827
+          modified: 1778490676746
+          isPrivate: false
+          description: ""
+          sortKey: -1778490564827
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "title": "Не работает авторизация",
+                "body": "При входе получаю ошибку 500."
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets"
+        name: Tickets
+        meta:
+          id: req_bd63cb5b37d643abba2898056467eaaf
+          created: 1778490704335
+          modified: 1778490731300
+          isPrivate: false
+          description: ""
+          sortKey: -1778490704335
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/login"
+        name: login
+        meta:
+          id: req_af92eb7185e948b2b98cbeb5da1142da
+          created: 1778490875393
+          modified: 1778492253362
+          isPrivate: false
+          description: ""
+          sortKey: -1778490875393
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+            	 "email": "pash@example.com",
+               "password": "password222"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets/2/comments"
+        name: Add commentd
+        meta:
+          id: req_55e5d59fee4f4cacbbaa1a5e2895c407
+          created: 1778491365579
+          modified: 1778492307344
+          isPrivate: false
+          description: ""
+          sortKey: -1778491365579
+        method: POST
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "body": "Проверьте логи в storage/logs/laravel.log gg "
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets/1"
+        name: tickets-1
+        meta:
+          id: req_23af6353367846418a68b4b71f51c746
+          created: 1778491521849
+          modified: 1778491699137
+          isPrivate: false
+          description: ""
+          sortKey: -1778491521849
+        method: GET
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets/1"
+        name: tickets status 1
+        meta:
+          id: req_ad3a296d6235455cae471d9f2398696c
+          created: 1778491616230
+          modified: 1778492226508
+          isPrivate: false
+          description: ""
+          sortKey: -1778491616230
+        method: PUT
+        body:
+          mimeType: application/json
+          text: |-
+            {
+                "status": "in_progres"
+            }
+        headers:
+          - name: Content-Type
+            value: application/json
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets/2/comments/2"
+        name: delete comment
+        meta:
+          id: req_acc53c1b59f24f04a013e94351271852
+          created: 1778491721100
+          modified: 1778492415008
+          isPrivate: false
+          description: ""
+          sortKey: -1778491721100
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+      - url: "{{url}}/api/tickets/2"
+        name: delete ticket-1
+        meta:
+          id: req_7e2e4b34710c42b8b570f028a3529b06
+          created: 1778491806127
+          modified: 1778492272954
+          isPrivate: false
+          description: ""
+          sortKey: -1778491806127
+        method: DELETE
+        headers:
+          - name: User-Agent
+            value: insomnia/12.5.0
+            description: ""
+            disabled: false
+        settings:
+          renderRequestBody: true
+          encodeUrl: true
+          followRedirects: global
+          cookies:
+            send: true
+            store: true
+          rebuildPath: true
+    authentication:
+      type: bearer
+      token: 6|IbgMtuyCj1D8iZnPVLJ3BOMO3kgCWqi1gUvQMae6556f88cb
+      prefix: Bearer
+    environment:
+      url: https://cuddly-broccoli-7v5qrvww977rc97-8000.app.github.dev
+    headers:
+      - name: Accept
+        value: application/json
+        description: ""
+        disabled: false
+      - name: Content-Type
+        value: application/json
+        description: ""
+        disabled: false
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778489716076
+    modified: 1778492455004
+  cookies:
+    - id: c417b82c-c3d9-4b46-a144-f1752484c48c
+      key: .Tunnels.Relay.WebForwarding.Cookies
+      value: CfDJ8NJJuTEdEi5KqensronCVW1k6xRTWHQGGys9-Dti744PTgK8zolA2HMJQfqi_AxGKBvtf5OXsJuaQLqhAM9uv-RUotDdINcxfJr_Q4TGvupX4r73QSJAOjaTk_bFguRW4EB94uiwItjI9wUwtEaXZEwsWlHvQDR0FxiH0iJ1aoJrkyNl3J4ZQGAUa2mQnNH8DMplN7KcNTVVEVBWKt2E41Y5GjZMj3kMYF62Cdbgo1w77IptwgD6BoAxSri7O0qLzGzzWAljrgQE7cPNwASamLUISVRNAzgYPMAn1GJfJsmNp_pkoQZm6AwSAeG9mOkQ84xeHSYPTylO7UeRbcihUFxwkQ8UhTMVQvCofUkZIX6u7NCOREIM8hvp6BLFRcB0RLg3242fEq93QZeqIDFcA5jrdwWhZY5K-oGHM42pC_CE85Q3NuODp68-3jPpIPhfHF0-m5wAWiMHJ8Lb4aFMzUu81PjBzyrwX5is_vmowO7RGxdtrCP-axP-pQMvJyUq3EH7q4chRZRR3X2-GlwTSTfq33QVQfnKu_TQn1MYDFR0vvGgmV-HcRm16PqGDUGYRSSpnL0d0E2hfh62ZMk9pv6ICBLRncaQKNhmJ368T1ok7GzzwBQ6zaRzs8Zrxw9S50rsWI7oIeCEbpN52G3ROldCT5zIFAQ9-u7cM_ec7hRX423jHk-jFtrHt1qstcxPxYrRNBMZ-LQggDcYqY9pnW3pDVG4JbLSgjtsGIZh0yEhJpFV7wEZAljGuy1VkhmmOGEuLAwFqPu-wL8HcRNeD-LgdXkv6nTJh-lP6O9CMpS_MglX_tEsVsq-P1qARL-QJtnaYPyGQaNKw8xjbA1CGVf_cTfUTGsM8MfoAVC5nzdyUXuOG-GbrQ4ymZy8jzyqeJf83gH3Yn5Ws1l2ikXTaoSjiT4TO4-BOfllYxlNwGRcZBhzF7kqrcmLDf0DQDvvfNXBGTWHOOMv-NJbQgyOsBTowk2wN-nbMTpaZ3Z1gs3j
+      domain: cuddly-broccoli-7v5qrvww977rc97-8000.app.github.dev
+      path: /
+      secure: true
+      httpOnly: false
+      extensions:
+        - Partitioned
+      hostOnly: true
+environments:
+  name: Base Environment
+  meta:
+    id: env_99d30891da4bdcebc63947a8fc17f076de878684
+    created: 1778489716073
+    modified: 1778489716073
+    isPrivate: false
